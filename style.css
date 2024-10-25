@@ -1,0 +1,298 @@
+*{
+    font-family:"Poppins", sans-serif;
+}
+.hero{
+    background: linear-gradient(to top,rgb(0, 0, 109),rgb(0, 0, 65));
+}
+.nav-ul{
+    list-style: none;
+    width: 680px;
+}
+.nav{
+    height: 12vh;
+    background: linear-gradient(rgb(0, 0, 65),rgb(0, 0, 65));
+    position: fixed;
+    top: -4px;
+    margin-left: -12px !important;
+    z-index: 100;
+}
+.button{
+    background: none !important;
+    outline: none;
+    border: 2px solid white;
+    width: 180px;
+    font-weight: 600;
+}
+.navbar-brand:hover{
+    cursor: pointer;
+}
+.link{
+    cursor: pointer;
+    position: relative;
+}
+.link1:hover::after{
+    content: "";
+    width: 65px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after1 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 65px;
+    }
+}
+.link2:hover::after{
+    content: "";
+    width: 65px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after2 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 85px;
+    }
+}
+.link3:hover::after{
+    content: "";
+    width: 68px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after3 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 68px;
+    }
+}
+.link4:hover::after{
+    content: "";
+    width: 68px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after4 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 105px;
+    }
+}
+.link5:hover::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after5;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after5 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 52px;
+    }
+}
+.link6:hover::after{
+    content: "";
+    width: 68px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: after6;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes after6 {
+    0%{
+        left: 0;
+        width: 10px;
+    }
+    100%{
+        left: 0;
+        width: 84px;
+    }
+}
+.button:hover .hover-button{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    height: 0px;
+    left: 0;
+    animation-name: hover-button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.hover-button>.text{
+    visibility: hidden;
+}
+.button:hover .text{
+    visibility: visible !important;
+    color: #E34473 !important;
+    font-weight: 600;
+}
+@keyframes hover-button{
+    0%{
+        height: 0%;
+        top: 0px;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    80%{
+        height: 50%;
+        top: 0px;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    100%{
+        height: 100%;
+        top: 0px;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 23px;
+        border-bottom-right-radius: 23px;
+    }
+}
+.text:hover{
+    visibility: visible;
+}
+.text{
+    position: relative;
+    top: 10px;
+    transition: 0.9s;
+}
+.button:hover>.text2{
+    display: none;
+}
+.button:hover{
+    box-shadow: 2px 2px 15px 15px #E34473;
+}
+.button{
+    transition: 0.8s;
+}
+.home-sec{
+    height: 80vh;
+    background-image: url(img/hero-img.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+.heading{
+    font-family: "Aboreto", system-ui;
+    text-transform: capitalize !important;
+    font-weight: 900 !important;
+    color: white;
+    font-size: 3.3rem;
+}
+.home-text{
+    width: 43%;
+}
+.button2{
+    background:linear-gradient(#FF4990,#FF6278) !important;
+    border: none !important;
+    font-weight: 600;
+    height: 8vh !important;
+    width: 150px;
+}
+.button2:hover .hover-button-2{
+    background:linear-gradient(#FF6278,#FF4990) !important;
+    position: absolute;
+    top: 0;
+    height: 0px;
+    left: 0;
+    animation-name: hover-button-2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hover-button-2{
+    0%{
+        width: 100px !important;
+        height: 0%;
+        top: 0px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    /* 80%{
+        height: 50%;
+        top: 0px;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    } */
+    100%{
+        width: 150px !important;
+        height: 100%;
+        top: 0px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+.button2:hover .text3{
+    display: none;
+}
+.button2:hover .text4{
+    visibility: visible !important;
+}
+.text4{
+    position: relative;
+    top: 15px;
+}
